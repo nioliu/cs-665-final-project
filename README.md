@@ -11,8 +11,7 @@
 
 # Assignment Overview
 
-This assignment is to implement a Automatic Beverage Machine, which can be used to make coffee and tea beverage with
-some condiments, and calculate the price of the final product.
+This assignment is to develop a notification system that will inform drivers about delivery requests.
 
 # GitHub Repository Link:
 
@@ -52,76 +51,89 @@ concepts.
 ```mermaid
 
 classDiagram
-%% can add more strategy easily just to implement this interface
-class BeverageStrategy{
- <<abstract>>
- -realStrategy: BeverageStrategy
- ~condiments: List<Condiment>
- %% return the price
- #brew()
- #price() double
- #name() String
- +execute() *
- +addCondiments(Codiments)*
- +switchBrewMethod(BeverageStrategy)*
+
+class Driver{
+ <<interface>>
+ +DriverType: enum
+ +driverLicense() String
+ +driverType() DriverType
+ +receiveNewDeliveryRequest()
 }
 
-class Americano{
- #brew()
- #price() double
- #name() String
+class FreelanceVan{
+    -driverLicense:String
+    -driverType:DriverType
+    +driverLicense()String
+    +driverType()DriverType
+    +receiveNewDeliveryRequest()
 }
 
-class GreenTea{
- #brew()
- #price() double
- #name() String
+class TaxiDriver{
+    -driverLicense:String
+    -driverType:DriverType
+    +driverLicense()String
+    +driverType()DriverType
+    +receiveNewDeliveryRequest()
 }
 
-class Condiment{
- <<abstract>>
- %% to mark which condiment
- ~getCondimentId() String
- %% to get the price if each condiment has its own price
- %% set this to public for client to get the price of curr condiment
- +price() double
- %% add current condiment
- ~add()
+class Subject{
+    <<interface>>
+    +registerObserver()
+    +notifyObservers()
+    +removeObserver()
 }
 
-class milk{
- %% to mark which condiment
- ~getCondimentId() String
- %% to get the price if each condiment has its own price
- %% set this to public for client to get the price of curr condiment
- +price() double
- %% add current condiment
- ~add()
+class DeliveryRequest{
+    -driverMap : HashMap
+    +registerObserver()
+    +notifyObservers()
+    +removeObserver()
 }
 
-class sugar{
- %% to mark which condiment
- ~getCondimentId() String
- %% to get the price if each condiment has its own price
- %% set this to public for client to get the price of curr condiment
- +price() double
- %% add current condiment
- ~add()
+class Retailer{
+    <<abstract>>
+    -subjectMap : HashMap
+    +notify()
+    +removeSubject()
+    #id()enum*
+    #address()String*
+}
+
+class Retailer1{
+    #id()enum
+    #address()String
+}
+
+class Retailer2{
+    #id()enum
+    #address()String
+}
+
+class Delivery{
+    -retailer : Retailer
+    -addtionalDetail : AdditionalDeliveryDetail
+    getDeliveryDetails()String
+}
+
+class AdditionalDeliveryDetail{
+    - productInfo : String
+    - destineAddr : String
+    - fees: double
 }
 
 %% implement beverage
-BeverageStrategy <|..  GreenTea
-BeverageStrategy <|..  Americano
+Driver <|..  FreelanceVan
+Driver <|..  TaxiDriver
 %% implement condiment
-Condiment <|.. milk
-Condiment <|.. sugar
-%% Beverage aggregation
-BeverageStrategy --o Condiment
-
-
-
-
-
+Subject <|.. DeliveryRequest
+Retailer <|-- Retailer1
+Retailer <|-- Retailer2
+%% driver dependent driver
+Subject..>Driver
+%% Delivery reuqest composit AdditionalDeliveryDetail
+Delivery..>AdditionalDeliveryDetail
+DeliveryRequest..>Delivery
+Retailer..>Subject
 ```
 
 ## How to use?
