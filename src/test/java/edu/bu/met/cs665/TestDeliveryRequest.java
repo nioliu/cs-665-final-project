@@ -16,8 +16,11 @@ public class TestDeliveryRequest {
         Driver taxiDriver1 = new TaxiDriver("123");// observer
         Driver taxiDriver2 = new TaxiDriver("456");// observer
         Driver taxiDriver3 = new TaxiDriver("789");// observer
+        Driver taxiDriver4 = new TaxiDriver("111");// observer
+        Driver taxiDriver5 = new TaxiDriver("222");// observer
+        Driver taxiDriver6 = new TaxiDriver("333");// observer
 
-        deliveryRequest1.registerObserver(taxiDriver1, taxiDriver2, taxiDriver3);
+        deliveryRequest1.registerObserver(taxiDriver1, taxiDriver2, taxiDriver3, taxiDriver4, taxiDriver5, taxiDriver6);
 
         retailer1.notify(new Delivery.
                 AdditionalDeliveryDetail("keyboard", "999, Boston, MA", 19.99));

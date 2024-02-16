@@ -28,8 +28,8 @@ public class Delivery {
 
     @Override
     public String toString() {
-        return String.format("%s wants to delivery a \"%s\" from " +
-                        "\"%s\" to \"%s\" with \"%f\"$.", retailer.id(), additionalDetail.productInfo,
+        return String.format("%s wants to delivery a \"%s\" from "
+                        + "\"%s\" to \"%s\" with \"%f\"$.", retailer.id(), additionalDetail.productInfo,
                 retailer.address(), additionalDetail.destineAddr, additionalDetail.fees);
     }
 }

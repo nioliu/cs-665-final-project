@@ -19,32 +19,29 @@ https://github.com/nioliu/cs-665-assignment-2/tree/main
 
 # Implementation Description
 
-My implement of Automatic Beverage Vending Machine utilize the **Strategy Pattern** as part of my main software design
-concepts.
+The design of the Delivery System utilizes the **Observer Pattern** to create a flexible and maintainable
+structure that supports dynamic registration and notification of drivers about delivery requests.
 
-1. Strategy design Pattern
-    - Allows the vending machine's behavior to be changed at runtime by invoke different brewing algorithm
-      like `Americano`
-    - Allows the clients change strategy easily with `switchBrewMethod`.
-    - You can also easily add more brewing algorithm with only 2 steps:
-        1. create a new class like `RedTea`
-        2. Implement the three method to extend `BeverageStrategy` abstract class.
-2. Simplicity and understandability
-    - Developer can understand easily from the `class UML`.
-    - Each main class and method has clear and meaningful comments which can also help developer to read.
-3. Encapsulation
-    - Hides the internal state and functionality of the brewing strategies and condiments to prevent unauthorized access
-      or changes.
-    - The `BeverageStrategy` and `Condiment` abstract class hide some fields like `brew()`,`price()`,`add()`, and only
-      expose some methods which are meaningful for users like `execute()` to execute brewing process, `addCondiments()`
-      to add condiments into beverage.
-    - Only can be implemented in beverage package, in case other package invoke this abstract class and doesn't
-      implement abstract method.
-4. Abstraction
-    - Define some common methods for common logics and abstract methods for specified logics, allowing for flexible
-      extension with different beverages.
-5. Inheritance
-    - Allow developer to extend `BeverageStrategy` and `Condiment` easily.
+1. **Observer Pattern**:
+    - Facilitates the communication between retailers and drivers without making them directly dependent on each other,
+      enhancing modularity and reducing coupling.
+    - The `Retailer` acts as a mediator with a collection of `Subject` objects, each capable of managing its own set
+      of `Driver` observers.
+    - New `Subject` instances representing different delivery contexts can be added seamlessly, allowing for scalability
+      in the notification process.
+2. **Composition and Association**:
+    - Retailers maintain a collection of `Subject` instances, which are managed via composition within a map structure,
+      indicating ownership and lifecycle management.
+    - The `Subject` objects passed to the `Retailer` as constructor arguments represent a dependency relationship, which
+      allows for flexibility in assigning different subjects to different retailers.
+3. **Encapsulation and Abstraction**:
+    - The system encapsulates the details of the notification logic within the `Subject` and `Driver` classes, exposing
+      only the necessary interface for registering and notifying observers.
+    - Abstracts the concept of notification from the specific implementations, allowing for the `Driver` interface to be
+      implemented by various concrete driver classes with different behaviors.
+4. **Inheritance and Extensibility**:
+    - The system is designed to be extensible, where new types of drivers or notification subjects can be introduced by
+      extending the base `Driver` and `Subject` interfaces.
 
 ## UML
 
@@ -139,15 +136,20 @@ Retailer..>Subject
 ## How to use?
 
 ```java
-public void testAllMethods() throws Exception {
-    GreenTea beverage = new GreenTea(); // assume you want a green tea
-    beverage.addCondiments(new Sugar(), new Milk(), new Milk());// and ass some condiments
-    beverage.switchBeverageStrategy(new YellowTea());// then you want to change to yellow tea
-    logger.info(beverage.getReceipt());// now you want to take a look at the receipt base on your chose
-    beverage.addCondiments(new Sugar());// and you decide to add one more sugar
-    logger.info(beverage.getReceipt());// and check the receipt
-    beverage.execute();// then begin to brew
-    logger.info(beverage.getTotalPrice());// finally, get the total price
+ public void TestBasic() {
+   DeliveryRequest deliveryRequest1 = new DeliveryRequest("1"); // subject
+   Retailer1 retailer1 = new Retailer1(deliveryRequest1);
+   Driver taxiDriver1 = new TaxiDriver("123");// observer
+   Driver taxiDriver2 = new TaxiDriver("456");// observer
+   Driver taxiDriver3 = new TaxiDriver("789");// observer
+   Driver taxiDriver4 = new TaxiDriver("111");// observer
+   Driver taxiDriver5 = new TaxiDriver("222");// observer
+   Driver taxiDriver6 = new TaxiDriver("333");// observer
+
+   deliveryRequest1.registerObserver(taxiDriver1, taxiDriver2, taxiDriver3, taxiDriver4, taxiDriver5, taxiDriver6);
+
+   retailer1.notify(new Delivery.
+           AdditionalDeliveryDetail("keyboard", "999, Boston, MA", 19.99));
 }
 ```
 

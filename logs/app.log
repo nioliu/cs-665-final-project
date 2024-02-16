@@ -317,3 +317,471 @@ retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Bo
 2024-02-16 18:08:37 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
 retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
 
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:111
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:111 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:222
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:222 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:333
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:333 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:30:37 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - current driver license has been registered!!
+ skip this.
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d789
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d456
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f456
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f123
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f789
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:111
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:111 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:222
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:222 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:333
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:333 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:31:17 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - current driver license has been registered!!
+ skip this.
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d789
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d456
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f456
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f123
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f789
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:111
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:111 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:222
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:222 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:333
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:333 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:33:30 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - current driver license has been registered!!
+ skip this.
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d789
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d456
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f456
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f123
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f789
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:111
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:111 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:222
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:222 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:333
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:333 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:39:58 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - current driver license has been registered!!
+ skip this.
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d789
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d456
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f456
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f123
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f789
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:111
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:111 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:222
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:222 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:333
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:333 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:40:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - current driver license has been registered!!
+ skip this.
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d789
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d456
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f456
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f123
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f789
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:111
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:111 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:222
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:222 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:333
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:333 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:45:38 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "444, Boston, MA" with "25.880000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - current driver license has been registered!!
+ skip this.
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d123
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d789
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:d456
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:d456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f456
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f123
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:f789
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.FreelanceVan - Driver:f789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:111
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:111 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:123
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:123 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:222
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:222 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:333
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:333 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:456
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:456 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.retailer.DeliveryRequest - notify driver:789
+2024-02-16 18:46:35 INFO  edu.bu.met.cs665.driver.TaxiDriver - Driver:789 receive a new delivery request:
+retailer1 wants to delivery a "keyboard" from "02141, Cambridge, MA" to "999, Boston, MA" with "19.990000"$.
+
