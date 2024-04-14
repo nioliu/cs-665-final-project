@@ -34,17 +34,15 @@ https://github.com/nioliu/cs-665-assignment-2/tree/main
 - Strategy Pattern:
     - Flexibility: The TaskConfig interface allows for defining multiple strategies, such as retry or timeout
       strategies, which can be applied to ComplexTask at runtime. This increases code flexibility by enabling new
-      behaviors to be
-      added simply by introducing new TaskConfig implementations.
+      behaviors to be added simply by introducing new TaskConfig implementations.
     - Simplicity: The strategy pattern separates configuration logic from task execution logic, making each strategy
       independent and easier to understand and maintain.
     - Importance of Avoiding Duplicated Code: It prevents duplication in ComplexTask as all specific configuration
       logics are encapsulated within their respective TaskConfig implementations.
 
 - Thread Pool Pattern:
-    - Performance Optimization: Utilizes a thread pool to manage the concurrent execution of tasks, enhancing
-      performance
-      and reducing resource consumption.
+    - Performance Optimization: Utilizes a thread pool to manage the concurrent execution of tasks, which is implemented
+      by `TaskManager`, enhancing performance and reducing resource consumption.
     - Simplicity: The use of a thread pool abstracts away the details of thread creation and management, simplifying the
       handling of concurrent tasks.
 
