@@ -7,36 +7,57 @@
 | Name         | Yulong Liu                 |
 | Date         | 04/14/2024                 |
 | Course       | Spring                     |
-| Assignment # | 6                          |
+| Assignment # | Final Project              |
 
 # Assignment Overview
 
 Examine this project assignment and improve the solutions for assignment2.
 
-# GitHub Repository Link:
+# GitHub Repository Link
 
 https://github.com/nioliu/cs-665-assignment-2/tree/main
 
-# Refactor points
+# Implementation details
 
-## Create AbstractDriver class:
+## Utilized Design Patterns and Their Advantages
 
-- Reason: Reduce redundant code and enhance the clarity and maintainability of the code structure.
-- Change content: Move the common implementation of the Driver interface (`driverLicense()` and `driverType()`
-  methods) to AbstractDriver. All concrete driver classes (such as `TaxiDriver`, `FreelanceVan`, etc.) now inherit from
-  `AbstractDriver`.
+- Observer Pattern:
 
-## Log system integration:
+    - Flexibility: By implementing the `TaskObserver` interface, new observers can be easily added to the system without
+      modifying existing code. This allows for future enhancements such as adding new types of notifications or logging
+      mechanisms simply by adding new observer implementations.
+    - Simplicity and Understandability: This pattern clearly separates the task execution logic from the result handling
+      logic, making the code easy to understand and maintain.
+    - Avoiding Duplicated Code: The observer pattern centralizes response logic in observer implementations, avoiding
+      repetitive response handling in the task execution code.
 
-- Reason: Unify log processing and simplify log management.
-- Change content: Initialize the Logger object in `AbstractDriver` and use this log object in all inherited subclasses.
+- Strategy Pattern:
+    - Flexibility: The TaskConfig interface allows for defining multiple strategies, such as retry or timeout
+      strategies, which can be applied to ComplexTask at runtime. This increases code flexibility by enabling new
+      behaviors to be
+      added simply by introducing new TaskConfig implementations.
+    - Simplicity: The strategy pattern separates configuration logic from task execution logic, making each strategy
+      independent and easier to understand and maintain.
+    - Importance of Avoiding Duplicated Code: It prevents duplication in ComplexTask as all specific configuration
+      logics are encapsulated within their respective TaskConfig implementations.
 
-## Use of constants and static methods:
+- Thread Pool Pattern:
+    - Performance Optimization: Utilizes a thread pool to manage the concurrent execution of tasks, enhancing
+      performance
+      and reducing resource consumption.
+    - Simplicity: The use of a thread pool abstracts away the details of thread creation and management, simplifying the
+      handling of concurrent tasks.
 
-- Reason: Avoid repeatedly defining and using the same string in multiple places to improve code readability and
-  maintainability.
-- Change content: Define static constants or methods in `AbstractDriver` to manage the
-  string template used in `receiveNewDeliveryRequest`.
+## Additional Design Strengths
+
+- Modularity: By splitting functionality into different classes and interfaces (e.g., Task, ComplexTask, TaskManager,
+  TaskObserver, TaskConfig), modularity is enhanced, making each module clear in responsibility and easier to test and
+  modify.
+- Testability: Extensive use of interfaces (e.g., TaskObserver, TaskConfig) provides good abstraction, allowing for easy
+  use of mock objects in unit testing, thereby enhancing testability.
+- Code Reuse: Programming to interfaces rather than implementations enhances code reusability. For example, different
+  implementations of the TaskConfig interface can be applied across various types of tasks without the need to rewrite
+  configuration logic.
 
 ## UML
 
