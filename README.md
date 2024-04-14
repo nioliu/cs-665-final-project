@@ -5,151 +5,133 @@
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
 | Name         | Yulong Liu                 |
-| Date         | 02/016/2024                |
-| Course       | Fall / Spring / Summer     |
-| Assignment # | 2                          |
+| Date         | 04/14/2024                 |
+| Course       | Spring                     |
+| Assignment # | 6                          |
 
 # Assignment Overview
 
-This assignment is to develop a notification system that will inform drivers about delivery requests.
+Examine this project assignment and improve the solutions for assignment2.
 
 # GitHub Repository Link:
 
 https://github.com/nioliu/cs-665-assignment-2/tree/main
 
-# Implementation Description
+# Refactor points
 
-The design of the Delivery System utilizes the **Observer Pattern** to create a flexible and maintainable
-structure that supports dynamic registration and notification of drivers about delivery requests.
+## Create AbstractDriver class:
 
-1. **Observer Pattern**:
-    - Facilitates the communication between retailers and drivers without making them directly dependent on each other,
-      enhancing modularity and reducing coupling.
-    - The `Retailer` acts as a mediator with a collection of `Subject` objects, each capable of managing its own set
-      of `Driver` observers.
-    - New `Subject` instances representing different delivery contexts can be added seamlessly, allowing for scalability
-      in the notification process.
-2. **Composition and Association**:
-    - Retailers maintain a collection of `Subject` instances, which are managed via composition within a map structure,
-      indicating ownership and lifecycle management.
-    - The `Subject` objects passed to the `Retailer` as constructor arguments represent a dependency relationship, which
-      allows for flexibility in assigning different subjects to different retailers.
-3. **Encapsulation and Abstraction**:
-    - The system encapsulates the details of the notification logic within the `Subject` and `Driver` classes, exposing
-      only the necessary interface for registering and notifying observers.
-    - Abstracts the concept of notification from the specific implementations, allowing for the `Driver` interface to be
-      implemented by various concrete driver classes with different behaviors.
-4. **Inheritance and Extensibility**:
-    - The system is designed to be extensible, where new types of drivers or notification subjects can be introduced by
-      extending the base `Driver` and `Subject` interfaces.
+- Reason: Reduce redundant code and enhance the clarity and maintainability of the code structure.
+- Change content: Move the common implementation of the Driver interface (`driverLicense()` and `driverType()`
+  methods) to AbstractDriver. All concrete driver classes (such as `TaxiDriver`, `FreelanceVan`, etc.) now inherit from
+  `AbstractDriver`.
+
+## Log system integration:
+
+- Reason: Unify log processing and simplify log management.
+- Change content: Initialize the Logger object in `AbstractDriver` and use this log object in all inherited subclasses.
+
+## Use of constants and static methods:
+
+- Reason: Avoid repeatedly defining and using the same string in multiple places to improve code readability and
+  maintainability.
+- Change content: Define static constants or methods in `AbstractDriver` to manage the
+  string template used in `receiveNewDeliveryRequest`.
 
 ## UML
 
 ```mermaid
-
 classDiagram
+    class Task {
+        <<interface>>
+        execute()
+    }
+    class ComplexTask {
+        -taskId : int
+        -loggingEnabled : boolean
+        -maxAttempts : int
+        -timeout : long
+        -observers : List~TaskObserver~
+        execute()
+        addConfig(TaskConfig)
+        addObserver(TaskObserver)
+        notifyObservers(String)
+        run()
+    }
+    class TaskManager {
+        -threadPool : ExecutorService
+        submitTask(ComplexTask)
+        shutdown()
+    }
+    class TaskConfig {
+        <<interface>>
+        applyConfig(ComplexTask)
+    }
+    class RetryConfig {
+        -maxAttempts : int
+        applyConfig(ComplexTask)
+    }
+    class TimeoutConfig {
+        -timeout : long
+        applyConfig(ComplexTask)
+    }
+    class ObserverConfig {
+        -observer : TaskObserver[]
+        applyConfig(ComplexTask)
+    }
+    class LoggingConfig {
+        -enable : boolean
+        applyConfig(ComplexTask)
+    }
+    class TaskObserver {
+        <<interface>>
+        onTaskCompleted(int, String)
+    }
+    class TaskObserverImpl {
+        <<abstract>>
+        -observerId : String
+        onTaskCompleted(int, String)
+        defaultTemplate() : String
+    }
+    class TaskObserverImpl1 {
+        onTaskCompleted(int, String)
+    }
+    class Runnable{
+        <<interface>>
+        run()
+    }
 
-class Driver{
- <<interface>>
- +DriverType: enum
- +driverLicense() String
- +driverType() DriverType
- +receiveNewDeliveryRequest()
-}
+    Task <|-- ComplexTask : implements
+    ComplexTask *-- "many" TaskObserver : observes
+    TaskManager o-- ComplexTask : manages
+    TaskConfig <|.. RetryConfig : implements
+    TaskConfig <|.. TimeoutConfig : implements
+    TaskConfig <|.. ObserverConfig : implements
+    TaskConfig <|.. LoggingConfig : implements
+    TaskObserver <|.. TaskObserverImpl : implements
+    TaskObserverImpl <|-- TaskObserverImpl1 : extends
+    ComplexTask "uses" ..> TaskConfig : configures
+    ComplexTask ..|> Runnable : implements
 
-class FreelanceVan{
-    -driverLicense:String
-    -driverType:DriverType
-    +driverLicense()String
-    +driverType()DriverType
-    +receiveNewDeliveryRequest()
-}
-
-class TaxiDriver{
-    -driverLicense:String
-    -driverType:DriverType
-    +driverLicense()String
-    +driverType()DriverType
-    +receiveNewDeliveryRequest()
-}
-
-class Subject{
-    <<interface>>
-    +registerObserver()
-    +notifyObservers()
-    +removeObserver()
-}
-
-class DeliveryRequest{
-    -driverMap : HashMap
-    +registerObserver()
-    +notifyObservers()
-    +removeObserver()
-}
-
-class Retailer{
-    <<abstract>>
-    -subjectMap : HashMap
-    +notify()
-    +removeSubject()
-    #id()enum*
-    #address()String*
-}
-
-class Retailer1{
-    #id()enum
-    #address()String
-}
-
-class Retailer2{
-    #id()enum
-    #address()String
-}
-
-class Delivery{
-    -retailer : Retailer
-    -addtionalDetail : AdditionalDeliveryDetail
-    getDeliveryDetails()String
-}
-
-class AdditionalDeliveryDetail{
-    - productInfo : String
-    - destineAddr : String
-    - fees: double
-}
-
-%% implement beverage
-Driver <|..  FreelanceVan
-Driver <|..  TaxiDriver
-%% implement condiment
-Subject <|.. DeliveryRequest
-Retailer <|-- Retailer1
-Retailer <|-- Retailer2
-%% driver dependent driver
-Subject..>Driver
-%% Delivery reuqest composit AdditionalDeliveryDetail
-Delivery..>AdditionalDeliveryDetail
-DeliveryRequest..>Delivery
-Retailer..>Subject
 ```
 
 ## How to use?
 
 ```java
  public void TestBasic() {
-   DeliveryRequest deliveryRequest1 = new DeliveryRequest("1"); // subject
-   Retailer1 retailer1 = new Retailer1(deliveryRequest1);
-   Driver taxiDriver1 = new TaxiDriver("123");// observer
-   Driver taxiDriver2 = new TaxiDriver("456");// observer
-   Driver taxiDriver3 = new TaxiDriver("789");// observer
-   Driver taxiDriver4 = new TaxiDriver("111");// observer
-   Driver taxiDriver5 = new TaxiDriver("222");// observer
-   Driver taxiDriver6 = new TaxiDriver("333");// observer
+    DeliveryRequest deliveryRequest1 = new DeliveryRequest("1"); // subject
+    Retailer1 retailer1 = new Retailer1(deliveryRequest1);
+    Driver taxiDriver1 = new TaxiDriver("123");// observer
+    Driver taxiDriver2 = new TaxiDriver("456");// observer
+    Driver taxiDriver3 = new TaxiDriver("789");// observer
+    Driver taxiDriver4 = new TaxiDriver("111");// observer
+    Driver taxiDriver5 = new TaxiDriver("222");// observer
+    Driver taxiDriver6 = new TaxiDriver("333");// observer
 
-   deliveryRequest1.registerObserver(taxiDriver1, taxiDriver2, taxiDriver3, taxiDriver4, taxiDriver5, taxiDriver6);
+    deliveryRequest1.registerObserver(taxiDriver1, taxiDriver2, taxiDriver3, taxiDriver4, taxiDriver5, taxiDriver6);
 
-   retailer1.notify(new Delivery.
-           AdditionalDeliveryDetail("keyboard", "999, Boston, MA", 19.99));
+    retailer1.notify(new Delivery.
+            AdditionalDeliveryDetail("keyboard", "999, Boston, MA", 19.99));
 }
 ```
 
