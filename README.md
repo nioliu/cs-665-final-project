@@ -1,4 +1,4 @@
-# Fully Automatic Beverage Vending Machine
+# Thread Pool
 
 ## Compile and Execute the code
 
@@ -15,14 +15,13 @@ Examine this project assignment and improve the solutions for assignment2.
 
 # GitHub Repository Link
 
-https://github.com/nioliu/cs-665-assignment-2/tree/main
+https://github.com/nioliu/cs-665-final-project
 
 # Implementation details
 
 ## Utilized Design Patterns and Their Advantages
 
 - Observer Pattern:
-
     - Flexibility: By implementing the `TaskObserver` interface, new observers can be easily added to the system without
       modifying existing code. This allows for future enhancements such as adding new types of notifications or logging
       mechanisms simply by adding new observer implementations.
@@ -48,13 +47,14 @@ https://github.com/nioliu/cs-665-assignment-2/tree/main
 
 ## Additional Design Strengths
 
-- Modularity: By splitting functionality into different classes and interfaces (e.g., Task, ComplexTask, TaskManager,
-  TaskObserver, TaskConfig), modularity is enhanced, making each module clear in responsibility and easier to test and
-  modify.
+- Modularity: By splitting functionality into different classes and interfaces (
+  e.g., `Task`, `ComplexTask`, `TaskManager`,`TaskObserver`, `TaskConfig`), modularity is enhanced, making each module
+  clear in responsibility and easier to test
+  and modify.
 - Testability: Extensive use of interfaces (e.g., TaskObserver, TaskConfig) provides good abstraction, allowing for easy
   use of mock objects in unit testing, thereby enhancing testability.
 - Code Reuse: Programming to interfaces rather than implementations enhances code reusability. For example, different
-  implementations of the TaskConfig interface can be applied across various types of tasks without the need to rewrite
+  implementations of the `TaskConfig` interface can be applied across various types of tasks without the need to rewrite
   configuration logic.
 
 ## UML
@@ -138,19 +138,14 @@ classDiagram
 
 ```java
  public void TestBasic() {
-    DeliveryRequest deliveryRequest1 = new DeliveryRequest("1"); // subject
-    Retailer1 retailer1 = new Retailer1(deliveryRequest1);
-    Driver taxiDriver1 = new TaxiDriver("123");// observer
-    Driver taxiDriver2 = new TaxiDriver("456");// observer
-    Driver taxiDriver3 = new TaxiDriver("789");// observer
-    Driver taxiDriver4 = new TaxiDriver("111");// observer
-    Driver taxiDriver5 = new TaxiDriver("222");// observer
-    Driver taxiDriver6 = new TaxiDriver("333");// observer
+    TaskManager taskManager = new TaskManager(10);
 
-    deliveryRequest1.registerObserver(taxiDriver1, taxiDriver2, taxiDriver3, taxiDriver4, taxiDriver5, taxiDriver6);
-
-    retailer1.notify(new Delivery.
-            AdditionalDeliveryDetail("keyboard", "999, Boston, MA", 19.99));
+    ComplexTask complexTask = new ComplexTask(1, new TaskConfig[]{
+            new RetryConfig(4),
+            new ObserverConfig(new TaskObserverImpl1("ob1"), new TaskObserverImpl1("ob2")),
+            new TimeoutConfig(5000),
+    });
+    taskManager.submitTask(complexTask);
 }
 ```
 
