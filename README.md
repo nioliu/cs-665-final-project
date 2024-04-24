@@ -11,7 +11,8 @@
 
 # Assignment Overview
 
-Examine this project assignment and improve the solutions for assignment2.
+Apply and expand understanding of software design patterns by developing a unique solution to a real-world problem using
+a design pattern not covered in class.
 
 # GitHub Repository Link
 
